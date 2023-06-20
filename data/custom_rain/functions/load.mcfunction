@@ -21,16 +21,26 @@
 	#define score_holder #weather 天候の種類
 	#define score_holder #daytime 夜明けから経過したゲーム内tick
 	#define score_holder #day ワールド生成時からのゲーム内経過日数
-	#define score_holder #weather_reality 天候のレアリティ
+	#define score_holder #weather_rarity 天候のレアリティ
 	#define score_holder #num それぞれのレアリティにおける天候の数
 	#define score_holder #weight それぞれの天候になる確率の重み
 	#define score_holder #initial_weight それぞれの重みの初期値
+	#define score_holder #weather_cycle 何tickに1回抽選を行うか
+	#define score_holder #count 毎tick1ずつ増加する
 
 scoreboard players set #initial_weight CR_common 50
 scoreboard players set #initial_weight CR_uncommon 30
 scoreboard players set #initial_weight CR_rare 15
 scoreboard players set #initial_weight CR_epic 4
 scoreboard players set #initial_weight CR_legendary 1
+scoreboard players set #weather_cycle CR 500
+
+scoreboard players set #num CR_common 2
+scoreboard players set #num CR_uncommon 3
+scoreboard players set #num CR_rare 3
+scoreboard players set #num CR_epic 2
+scoreboard players set #num CR_legendary 0
 
 scoreboard players set #-1 constant -1
 scoreboard players set #1000 constant 1000
+scoreboard players set #24000 constant 24000
