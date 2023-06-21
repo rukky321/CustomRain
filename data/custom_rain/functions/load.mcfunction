@@ -38,7 +38,7 @@ scoreboard players set #weather_cycle CR 500
 scoreboard players set #num CR_common 2
 scoreboard players set #num CR_uncommon 3
 scoreboard players set #num CR_rare 3
-scoreboard players set #num CR_epic 2
+scoreboard players set #num CR_epic 3
 scoreboard players set #num CR_legendary 0
 
 scoreboard players set #-1 constant -1
