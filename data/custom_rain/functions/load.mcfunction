@@ -33,14 +33,15 @@ scoreboard players set #initial_weight CR_uncommon 30
 scoreboard players set #initial_weight CR_rare 15
 scoreboard players set #initial_weight CR_epic 4
 scoreboard players set #initial_weight CR_legendary 1
-scoreboard players set #weather_cycle CR 500
+scoreboard players set #weather_cycle CR 1200
 
 scoreboard players set #num CR_common 2
 scoreboard players set #num CR_uncommon 3
-scoreboard players set #num CR_rare 3
-scoreboard players set #num CR_epic 3
-scoreboard players set #num CR_legendary 0
+scoreboard players set #num CR_rare 4
+scoreboard players set #num CR_epic 4
+scoreboard players set #num CR_legendary 1
 
 scoreboard players set #-1 constant -1
+scoreboard players set #76 constant 76
 scoreboard players set #1000 constant 1000
 scoreboard players set #24000 constant 24000
