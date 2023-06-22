@@ -57,7 +57,12 @@ execute if score #weather_rarity CR matches 4 run function custom_rain:rain/lege
 
 
 
-# 抽選結果をチャットに表示
+# 次回の#weather_cycleの値を決定
+scoreboard players operation #weather_cycle CR = #weather_cycle_min CR
+scoreboard players operation #rng_max CR = #weather_cycle_max CR
+scoreboard players operation #rng_max CR -= #weather_cycle_min CR
+function custom_rain:func/rng
+scoreboard players operation #weather_cycle CR += #rng CR
 
 
 #デバッグ用
