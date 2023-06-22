@@ -12,3 +12,4 @@ execute if score #rng CR matches ..-1 run scoreboard players operation #rng CR *
 scoreboard players operation #rng CR %= #rng_max CR
 kill @e[tag=CR_rng]
 scoreboard players reset #rng_max CR
+

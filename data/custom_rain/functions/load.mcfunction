@@ -18,15 +18,14 @@
 	#define score_holder #rng_max 乱数最大値
 	#define score_holder #rng 生成した乱数
 	#define score_holder #rain 雨の種類
-	#define score_holder #weather 天候の種類
-	#define score_holder #daytime 夜明けから経過したゲーム内tick
-	#define score_holder #day ワールド生成時からのゲーム内経過日数
+	#define score_holder #time 毎tick増加させる
 	#define score_holder #weather_rarity 天候のレアリティ
 	#define score_holder #num それぞれのレアリティにおける天候の数
 	#define score_holder #weight それぞれの天候になる確率の重み
 	#define score_holder #initial_weight それぞれの重みの初期値
 	#define score_holder #weather_cycle_max 何tickに1回抽選を行うか(最大値)	
 	#define score_holder #weather_cycle_min 何tickに1回抽選を行うか(最小値)
+	#define score_holder #weather_cycle その天候が続くながさ
 	#define score_holder #count 毎tick1ずつ増加する
 
 #	それぞれの確率の重みを設定
@@ -42,19 +41,20 @@ scoreboard players set #weather_cycle_min CR 600
 
 scoreboard players set #num CR_common 1
 scoreboard players set #num CR_uncommon 5
-scoreboard players set #num CR_rare 5
+scoreboard players set #num CR_rare 6
 scoreboard players set #num CR_epic 4
 scoreboard players set #num CR_legendary 2
 
-scoreboard players set #-1 constant -1
+scoreboard players set #-1 constant 0
 scoreboard players set #2 constant 2
 scoreboard players set #38 constant 38
 scoreboard players set #75 constant 75
+scoreboard players set #874 constant 874
 scoreboard players set #1000 constant 1000
-scoreboard players set #24000 constant 24000
 
 #最初の天候が切り替わるまでの時間を設定
 scoreboard players operation #weather_cycle CR = #weather_cycle_max CR 
 scoreboard players operation #weather_cycle CR += #weather_cycle_min CR
 scoreboard players operation #weather_cycle CR /= #2 constant
+
 

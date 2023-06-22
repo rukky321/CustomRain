@@ -64,6 +64,9 @@ scoreboard players operation #rng_max CR -= #weather_cycle_min CR
 function custom_rain:func/rng
 scoreboard players operation #weather_cycle CR += #rng CR
 
+#スコアのリセット
+scoreboard players reset #time CR
+
 
 #デバッグ用
 tellraw @p [{"text":"rarity: "},{"score":{"name":"#weather_rarity","objective":"CR"}},{"text":" rng: "},{"score":{"name":"#tmp","objective":"CR"}}]
