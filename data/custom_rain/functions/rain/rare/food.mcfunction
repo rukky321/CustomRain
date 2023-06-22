@@ -1,6 +1,6 @@
-#> custom_rain:rain/uncommon/food
+#> custom_rain:rain/rare/food
 #
-# @within custom_rain:rain/uncommon/**
+# @within custom_rain:rain/rare/**
 
 execute if score #count CR matches 1 as @a run function custom_rain:rain/set_point
 execute if score #count CR matches 1 at @e[tag=CR_rain_point] run loot spawn ~ ~ ~ loot custom_rain:food

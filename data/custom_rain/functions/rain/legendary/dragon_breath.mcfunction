@@ -1,6 +1,6 @@
-#> custom_rain:rain/epic/dragon_breath
+#> custom_rain:rain/legendary/dragon_breath
 #
-# @within custom_rain:rain/epic/**
+# @within custom_rain:rain/legendary/**
 
 execute if score #count CR matches 1 as @a run function custom_rain:rain/set_point
 execute if score #count CR matches 1 at @e[tag=CR_rain_point] run summon dragon_fireball ~ ~ ~ {power:[0.0,-0.1,0.0]}

@@ -69,5 +69,5 @@ scoreboard players reset #time CR
 
 
 #デバッグ用
-tellraw @p [{"text":"rarity: "},{"score":{"name":"#weather_rarity","objective":"CR"}},{"text":" rng: "},{"score":{"name":"#tmp","objective":"CR"}}]
-tellraw @p [{"text":"common: "},{"score":{"name":"#weight","objective":"CR_common"}},{"text":" uncommon: "},{"score":{"name":"#weight","objective":"CR_uncommon"}},{"text":" rare: "},{"score":{"name":"#weight","objective":"CR_rare"}},{"text":" epic: "},{"score":{"name":"#weight","objective":"CR_epic"}},{"text":" legendary: "},{"score":{"name":"#weight","objective":"CR_legendary"}}]
+#tellraw @p [{"text":"rarity: "},{"score":{"name":"#weather_rarity","objective":"CR"}},{"text":" rng: "},{"score":{"name":"#tmp","objective":"CR"}}]
+#tellraw @p [{"text":"common: "},{"score":{"name":"#weight","objective":"CR_common"}},{"text":" uncommon: "},{"score":{"name":"#weight","objective":"CR_uncommon"}},{"text":" rare: "},{"score":{"name":"#weight","objective":"CR_rare"}},{"text":" epic: "},{"score":{"name":"#weight","objective":"CR_epic"}},{"text":" legendary: "},{"score":{"name":"#weight","objective":"CR_legendary"}}]

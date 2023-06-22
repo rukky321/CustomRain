@@ -4,7 +4,7 @@
 
 # 時間が特定の時間になっていれば天候を抽選する
 scoreboard players add #time CR 1
-execute if score #time CR = #weather_cycle CR run function custom_rain:rain/set_weather
+execute if score #time CR >= #weather_cycle CR run function custom_rain:rain/set_weather
 
 # 現在の天候を調べて実行する
 execute if score #weather_rarity CR matches 0 if entity @e[type=player] run function custom_rain:rain/common/run
