@@ -13,5 +13,5 @@ execute if score #weather_rarity CR matches 2 if entity @e[type=player] run func
 execute if score #weather_rarity CR matches 3 if entity @e[type=player] run function custom_rain:rain/epic/run
 execute if score #weather_rarity CR matches 4 if entity @e[type=player] run function custom_rain:rain/legendary/run
 
-
+# カウント用スコアを毎tickインクリメント
 scoreboard players add #count CR 1
