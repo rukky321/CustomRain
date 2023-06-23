@@ -1,5 +1,5 @@
 # CustomRain
-minecraft datapack for JE 1.20.X  
+Minecraft datapack for JE 1.20.X  
 
 ## 説明
 矢の雨やTNTの雨など、色々な種類の雨が降るようになるデータパックです。  
